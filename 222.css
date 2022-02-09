@@ -6,13 +6,13 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
-  max-height: 750px;
+  max-width: 980px;
+  max-height: 2286px;
   position: relative;
   margin: auto;
 }
 .slideshow-container .mySlides img {
-  height: 750px;
+  height: 980px;
 }
 
 /* Hide the images by default */
