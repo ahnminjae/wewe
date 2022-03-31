@@ -79,7 +79,7 @@
   .history li {font-size: 10px; color:#000; line-height: 15px;  }
 }
 
-body {
+/* body {
   font-family: Calluna, Arial, sans-serif;
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(image/hand-gf3f7d80d1_1920.jpg);
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ body {
   padding-top: 45%;
   color: #fff;
 }
-
+ */
  .indi h1 {
   font-size: 4rem;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
