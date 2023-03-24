@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>이코믹스 회사 소개</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+    
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin:0 0 0 0;
+		}
+		
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+				
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="../multislider.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#fullpage').fullpage({
+				sectionsColor: ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'],
+				anchors: ['main1','aboutus1','aboutus2', 'business1', 'business2', 'business3','business4','business5','Author1','contectus1'],
+				menu: '#menu',
+				scrollingSpeed: 1000,
+				loopBottom: true,
+			    afterRender: function () {
+				setInterval(function () {
+				$.fn.fullpage.moveSlideRight();
+            }, 5000);
+        }
+
+			});
+   
+		});
+	</script>
+
+</head>
+<body>
+
+
+<!--ul id="menu">
+<img src="D:\가제작\media\www.seoulmediacomics.com\images\logo_brand_big.jpg">
+	<li data-menuanchor="firstPage"><a href="#firstPage">회사<br>소개</a></li>d
+	<ul>
+            <li>회사소개</li>
+			<li>회사연혁</li>
+    </ul>
+	<li data-menuanchor="secondPage"><a href="#secondPage">사업<br>소개</a></li>
+		<ul>
+            <li>회사소개</li>
+			<li>회사연혁</li>
+    </ul>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">작가<br>지원</a></li>
+		<ul>
+            <li>회사소개</li>
+			<li>회사연혁</li>
+    </ul>
+	<li data-menuanchor="4thpage"><a href="#4thpage">오시<br>는길</a></li>
+	<li data-menuanchor="5thpage"><a href="#5thpage">English</a></li>
+</ul-->
+<!--<ul id="menu">
+<img src="D:\가제작\media\www.seoulmediacomics.com\images\logo_brand_big.jpg">
+	<li data-menuanchor="aboutus1"><a href="#aboutus1">회사소개</a></li>
+	<li data-menuanchor="business1"><a href="#business1">사업소개</a></li>
+	<li data-menuanchor="Author1"><a href="#Author1">작가지원</a></li>
+	<li data-menuanchor="contectus1"><a href="#contectus1">오시는길</a></li>
+	<li data-menuanchor="5thpage"><a href="/en">English</a></li>
+</ul>-->
+
+					
+<div id="fullpage">
+	<div class="section " id="section0">
+
+		<div class="slide">
+			<div class="intro">
+				<h1> </h1>
+				<p></p>
+
+				<img src="imgs/2.jpg" alt="slider" />
+			</div>
+
+		</div>
+				
+	</div>
+
+	<div class="section" id="section1">
+	<img src="imgs/3.jpg" alt="slider" />
+	</div>
+	<div class="section" id="section2">
+	<img src="imgs/4.jpg" alt="slider" />
+	</div>
+	<div class="section" id="section3">
+	<img src="imgs/5.jpg" alt="slider" />
+	</div>
+	<div class="section" id="section4">
+	<img src="imgs/6.jpg" alt="slider" />
+	</div>
+	<div class="section" id="section5">
+	<img src="imgs/7.jpg" alt="slider" />
+	</div>
+
+	<div class="section" id="section6">
+	<img src="imgs/8.jpg" alt="slider" />
+	</div>
+
+	<div class="section" id="section7">
+	<img src="imgs/9.jpg" alt="slider" />
+	</div>
+
+	<div class="section" id="section8">
+	<img src="imgs/10.jpg" alt="slider" />
+	</div>
+
+	<div class="section" id="section9">
+	<img src="imgs/11.jpg" alt="slider" />
+	</div>
+
+
+ 
+
+
+    </div>
+<script>
+   function myMap(){
+      var mapOptions = { 
+            center:new google.maps.LatLng(37.5848659, 126.88598),
+            zoom:18
+      };
+ 
+      var map = new google.maps.Map( 
+             document.getElementById("googleMap") 
+            , mapOptions );
+
+     var marker = new google.maps.Marker({
+          position: {lat: 37.5848659, lng: 126.88598},
+          map: map,
+            draggable: true,
+            //animation: google.maps.Animation.DROP,                    //핀이 날아온다. 
+            title: '이코믹스'
+      });
+
+
+   }
+</script> 
+			<!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA17aGZ8qbu36ay3gwqh9sQvpBnI5BwsHg&callback=myMap"></script-->
+			<p>(03920)서울시 마포구 성암로 330 DMC첨단산업센터 A동 512호 
+T. 070-8270-7073 Fax. 02-6280-7071
+E. support@ecomix.co.kr
+</p>
+
+		</div>
+	</div>
+
+
+</div>
+<script>
+$('#Slider1').multislider({
+    slideAll:true,
+    duration: 1000,
+    interval:4000,
+	continuous:true
+});
+$('#Slider2').multislider({
+    slideAll:true,
+    duration: 1000,
+    interval:4000,
+	continuous:true
+});
+$('#Slider3').multislider({
+    slideAll:true,
+    duration: 1000,
+    interval:4000,
+	continuous:true
+});
+$('#Slider4').multislider({
+    slideAll:true,
+    duration: 1000,
+    interval:4000,
+	continuous:true
+});
+
+$('#Slider1').multislider('continuous');
+$('#Slider2').multislider('continuous');
+$('#Slider3').multislider('continuous');
+$('#Slider4').multislider('continuous');
+
+
+</script> 
+</body>
+</html>
